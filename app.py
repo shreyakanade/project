@@ -1,28 +1,5 @@
-"""
-Hiring Assistant Chatbot - Streamlit App
-File: hiring_assistant_streamlit.py
 
-This single-file Streamlit app implements the Hiring Assistant described by the user.
 
-Features:
-- Collects candidate info via a form (Full name, Email, Phone, Years of experience, Desired positions, Location, Tech stack)
-- Prompts for Tech Stack Declaration (languages, frameworks, DBs, tools)
-- Uses OpenAI API (ChatCompletion) to generate 3-5 technical questions per declared technology
-- Context handling with st.session_state
-- Exit keywords to terminate conversation
-- Fallback responses when input not understood
-- Simulated, anonymized data storage (candidates.json) — hashes email & phone and only stores anonymized records
-- Generates README.md at first run
-
-Requirements:
-- Python 3.8+
-- pip install streamlit openai python-dotenv
-- Set environment variable OPENAI_API_KEY
-
-Run locally:
-> streamlit run hiring_assistant_streamlit.py
-
-"""
 
 import streamlit as st
 import openai
